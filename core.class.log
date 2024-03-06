@@ -1,0 +1,30 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573053012883@s.whatsapp.net',
+    fromMe: false,
+    id: '45FCC71C45DFA260DE82A2AD35B5DD12',
+    participant: undefined
+  },
+  messageTimestamp: 1709766320,
+  pushName: 'Alexis',
+  broadcast: false,
+  message: Message {
+    conversation: '9',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '9',
+  from: '573053012883'
+}
+Error en sendProviderAndSave (ID ans_ff9f26f9-7d2c-422b-b276-f4c26de50a98): ReferenceError: gotoFlow is not defined
+    at Object.ans_ff9f26f9-7d2c-422b-b276-f4c26de50a98 (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\app.js:115:13)
+    at runContext (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1444:57)
+    at cbEveryCtx (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1471:19)
+    at resolveCbEveryCtx (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1401:35)
+    at C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1239:41
+    at async Object.promiseInFunc (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1238:25)
+    at async C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:529:35
+    at async Promise.allSettled (index 0)
+    at async Queue.processQueue (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:547:13)

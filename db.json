@@ -1,0 +1,21 @@
+[
+  {
+    "ref": "ans_ff9f26f9-7d2c-422b-b276-f4c26de50a98",
+    "keyword": "key_5794ff7e-4de4-4720-b5bf-226a12cc0e1a",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "14972c3375b0230fac87ed95acc938b6",
+    "from": "573053012883"
+  }
+]
