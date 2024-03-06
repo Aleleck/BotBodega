@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573053012883@s.whatsapp.net',
     fromMe: false,
-    id: '45FCC71C45DFA260DE82A2AD35B5DD12',
+    id: '1B66EBE42DCB5168BBD5ACA0D772D9AE',
     participant: undefined
   },
-  messageTimestamp: 1709766320,
+  messageTimestamp: 1709768482,
   pushName: 'Alexis',
   broadcast: false,
   message: Message {
@@ -18,13 +18,39 @@
   body: '9',
   from: '573053012883'
 }
-Error en sendProviderAndSave (ID ans_ff9f26f9-7d2c-422b-b276-f4c26de50a98): ReferenceError: gotoFlow is not defined
-    at Object.ans_ff9f26f9-7d2c-422b-b276-f4c26de50a98 (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\app.js:115:13)
-    at runContext (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1444:57)
-    at cbEveryCtx (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1471:19)
-    at resolveCbEveryCtx (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1401:35)
-    at C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1239:41
-    at async Object.promiseInFunc (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1238:25)
-    at async C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:529:35
-    at async Promise.allSettled (index 0)
-    at async Queue.processQueue (C:\Users\lenovo\Desktop\Nueva carpeta\base-baileys-memory\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:547:13)
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_67880b19-fb77-4e0f-bf51-013fb968e428',
+  keyword: 'key_3aa52ae7-bc32-4d4d-ae5e-bf57c8283317',
+  answer: 'Bienvenido',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ad8d4e736e645baddb7244f952e47a8d'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_0289f56d-13fa-4bc1-851b-6e1ce3a73470',
+  keyword: 'ans_67880b19-fb77-4e0f-bf51-013fb968e428',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '5eeee009d31cc8989fab4c93d44580fa'
+}
