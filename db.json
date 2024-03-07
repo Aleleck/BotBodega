@@ -1,15 +1,15 @@
 [
   {
-    "ref": "05361ab4-c411-430d-8a9b-a8bfa1d34a21",
-    "keyword": "3d5cd1a43eea09dd36bc1a024eb54fdd",
+    "ref": "eaee89e4-e10f-4d7d-9d71-a3d0437b8aef",
+    "keyword": "cd16ec797270c6dae8bb24b7a05d50f1",
     "answer": "9",
     "options": {},
     "from": "573053012883",
     "refSerialize": "a988c0775e3fda48f513c1a054140b3c"
   },
   {
-    "ref": "ans_67880b19-fb77-4e0f-bf51-013fb968e428",
-    "keyword": "key_3aa52ae7-bc32-4d4d-ae5e-bf57c8283317",
+    "ref": "ans_2b2cbc24-b1da-4a2f-8ea2-972d6451c3ab",
+    "keyword": "key_2109f049-5714-4070-8bd9-d55f4314cf77",
     "answer": "Bienvenido",
     "options": {
       "media": null,
@@ -23,12 +23,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "ad8d4e736e645baddb7244f952e47a8d",
+    "refSerialize": "9c30b0262255fb3a74ee4ea63f5508c1",
     "from": "573053012883"
   },
   {
-    "ref": "ans_0289f56d-13fa-4bc1-851b-6e1ce3a73470",
-    "keyword": "ans_67880b19-fb77-4e0f-bf51-013fb968e428",
+    "ref": "ans_027fd5c7-29b1-4530-b45b-ff8fab6f20f3",
+    "keyword": "ans_2b2cbc24-b1da-4a2f-8ea2-972d6451c3ab",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -42,7 +42,178 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "5eeee009d31cc8989fab4c93d44580fa",
+    "refSerialize": "9edcb9e6d3d54a8e7276537d8d4469ea",
     "from": "573053012883"
+  },
+  {
+    "ref": "ans_8929424a-bf86-4e41-b52d-c445ad4aed46",
+    "keyword": "key_08730324-ef8a-40e2-bbac-b8a32e77b479",
+    "answer": "Escoge la opcion:\n👉 1️⃣ Para Bancolombia\n👉 2️⃣ Para Nequi, Grupo Aval, Gana o Facturas\n👉 3️⃣ Efecty\n👉 4️⃣ Otros ",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [
+        {
+          "ref": "key_39ef4f8e-1043-4e37-b3d5-10a2034b1f35",
+          "keyword": [
+            1
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "fab9532a0f6fb6b9733797bf70a88975"
+        },
+        {
+          "ref": "ans_5b9a8ef6-25b1-4b16-806f-8021220c0d7f",
+          "keyword": "key_39ef4f8e-1043-4e37-b3d5-10a2034b1f35",
+          "answer": "Envia los datos de la consignacion",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": true,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": true
+          },
+          "refSerialize": "423453d6c6eda2570d82129f18e50c06"
+        },
+        {
+          "ref": "key_d9ea6d11-b57c-417b-aaaf-21114f515498",
+          "keyword": [
+            2
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "9984db426933f1470c1317888d6510d5"
+        },
+        {
+          "ref": "ans_5018465d-ae7f-4b81-b823-b8317ef615ff",
+          "keyword": "key_d9ea6d11-b57c-417b-aaaf-21114f515498",
+          "answer": "Enviar consignacion",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": false,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": false
+          },
+          "refSerialize": "b5a7129cc6ffb6a9c6c52e77a84cd7a2"
+        },
+        {
+          "ref": "key_1c3626c2-10c0-4dc4-820e-9c35492386ed",
+          "keyword": [
+            3
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "f676d62e6d6c050f0a0368bce13a929d"
+        },
+        {
+          "ref": "ans_5abf5f22-dc9c-4f46-9b46-f68178546113",
+          "keyword": "key_1c3626c2-10c0-4dc4-820e-9c35492386ed",
+          "answer": "Enviar consignacion",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": false,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": false
+          },
+          "refSerialize": "4e0865fb3c4613f298381a10d71655b6"
+        },
+        {
+          "ref": "key_e16f438e-ccc6-41ba-a077-7ae82dfe7636",
+          "keyword": [
+            4
+          ],
+          "options": {
+            "sensitive": false,
+            "regex": false
+          },
+          "refSerialize": "9d3893ec22d87d4a857cef2b49b0a92d"
+        },
+        {
+          "ref": "ans_a4dc28dc-792c-4115-befa-8b60da53683c",
+          "keyword": "key_e16f438e-ccc6-41ba-a077-7ae82dfe7636",
+          "answer": "Enviar consignacion",
+          "options": {
+            "media": null,
+            "buttons": [],
+            "capture": false,
+            "child": null,
+            "delay": 0,
+            "idle": null,
+            "ref": null,
+            "nested": [],
+            "keyword": {},
+            "callback": false
+          },
+          "refSerialize": "6ec410cb51b9cceb3463780d32da4a10"
+        }
+      ],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "e8dffa1c68ca86789440f85437853ada",
+    "from": "573053012883"
+  },
+  {
+    "ref": "a6a5aa43-45f6-42f3-a98c-8970cf3455fc",
+    "keyword": "e8dffa1c68ca86789440f85437853ada",
+    "answer": "1",
+    "options": {},
+    "from": "573053012883",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_5b9a8ef6-25b1-4b16-806f-8021220c0d7f",
+    "keyword": "key_39ef4f8e-1043-4e37-b3d5-10a2034b1f35",
+    "answer": "Envia los datos de la consignacion",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "423453d6c6eda2570d82129f18e50c06",
+    "from": "573053012883"
+  },
+  {
+    "ref": "1dfdcfd6-77a6-4e09-b5af-ba9e0695ffb8",
+    "keyword": "423453d6c6eda2570d82129f18e50c06",
+    "answer": "Gdggvfg",
+    "options": {},
+    "from": "573053012883",
+    "refSerialize": "73d45f38d399c97b8902ccdf339ed8b1"
   }
 ]
