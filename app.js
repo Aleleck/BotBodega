@@ -1,60 +1,39 @@
-const { createBot, createProvider, createFlow, addKeyword} = require('@bot-whatsapp/bot')
+const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot');
+const QRPortalWeb = require('@bot-whatsapp/portal');
+const BaileysProvider = require('@bot-whatsapp/provider/baileys');
+const JsonFileAdapter = require('@bot-whatsapp/database/json');
 
-const QRPortalWeb = require('@bot-whatsapp/portal')
-const BaileysProvider = require('@bot-whatsapp/provider/baileys')
-const JsonFileAdapter = require('@bot-whatsapp/database/json')
+const flowNumeroErrado = addKeyword('error').addAnswer('No se permite esta transaccion para este contacto');
 
+const flowOtros = addKeyword([4]).addAnswer('Enviar consignacion');
 
+const flowEfecty = addKeyword([3]).addAnswer('Enviar consignacion');
 
-const flowNumeroErrado = addKeyword('error').addAnswer('No se permite esta transaccion para este contacto')
+const flowNequi = addKeyword([2]).addAnswer('Enviar consignacion');
 
-const flowOtros = addKeyword([4])
-    .addAnswer('Enviar consignacion')
+const flowBancolombia = addKeyword([1]).addAnswer('Envia los datos de la consignacion',
+        { capture: true },
+        async (ctx, {provider}) => {
+            await provider.sendText('573053012883@s.whatsapp.net', ctx.body)
+            //Envia el mensaje recibodo a otro numero de whatsapp
+        });
 
-const flowEfecty = addKeyword([3])
-    .addAnswer('Enviar consignacion')
+const flowEscoge = addKeyword('%&%#escpge').addAnswer([
+    'Escoge la opcion:',
+    '👉 1️⃣ Para Bancolombia',
+    '👉 2️⃣ Para Nequi, Grupo Aval, Gana o Facturas',
+    '👉 3️⃣ Efecty',
+    '👉 4️⃣ Otros '
+],
+    null,
+    null,
+    [flowBancolombia, flowNequi, flowEfecty, flowOtros]
+)
 
-const flowNequi = addKeyword([2])
-    .addAnswer('Enviar consignacion')
+const flowRoman = addKeyword(['9']).addAnswer('Bienvenido').addAction(async (ctx, { gotoFlow }) => {
 
-const flowBancolombia = addKeyword([1])
-    .addAnswer('Envia los datos de la consignacion',
-    {capture: true},
-    async (ctx, { provider }) => {
-        // Obtener el número de teléfono al que quieres enviar el mensaje
-        const phoneNumber = '573216996970'; // Coloca aquí el número de teléfono deseado
-
-        // Mensaje que quieres enviar
-        const message = "hola"
-
-        try {
-            // Enviar el mensaje utilizando el proveedor BaileysProvider
-            await provider.sendMessage(phoneNumber, message);
-            
-            // Confirmar que el mensaje se envió correctamente
-            console.log('Mensaje enviado con éxito');
-        } catch (error) {
-            // Manejar cualquier error que ocurra durante el envío del mensaje
-            console.error('Error al enviar el mensaje:', error);
-        }
-    });
-const flowEscoge = addKeyword('escpge').addAnswer([
-        'Escoge la opcion:',
-        '👉 1️⃣ Para Bancolombia',
-        '👉 2️⃣ Para Nequi, Grupo Aval, Gana o Facturas',
-        '👉 3️⃣ Efecty',
-        '👉 4️⃣ Otros '
-    ],
-        null,
-        null,
-        [flowBancolombia, flowNequi, flowEfecty, flowOtros]
-    )
-
-const flowRoman = addKeyword(['9']).addAnswer('Bienvenido')
-    .addAction(async (ctx,{gotoFlow}) => {
-        
         //Aqui con el ctx.from verificamos nos esten hablando del numero de roman o de jenny
-        const allowedNumbers = ['573216421174', '573147348704','573053012883'];
+        const allowedNumbers = ['573216421174', '573147348704', '573053012883'];
         const fromNumber = ctx.from;
 
         if (allowedNumbers.includes(fromNumber)) {
@@ -67,7 +46,7 @@ const flowRoman = addKeyword(['9']).addAnswer('Bienvenido')
 
 const main = async () => {
     const adapterDB = new JsonFileAdapter()
-    const adapterFlow = createFlow([flowRoman,flowEscoge])//quito el "flowPrincipal" para crear un menu 
+    const adapterFlow = createFlow([flowRoman, flowEscoge])//quito el "flowPrincipal" para crear un menu 
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({
@@ -79,4 +58,4 @@ const main = async () => {
     QRPortalWeb()
 }
 
-main()
+main();
