@@ -1,0 +1,114 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573053012883@s.whatsapp.net',
+    fromMe: false,
+    id: '7743C0E53AF085D10F3CC8E7F65B2C7B',
+    participant: undefined
+  },
+  messageTimestamp: 1710445354,
+  pushName: 'Alexis',
+  broadcast: false,
+  message: Message {
+    conversation: '9',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '9',
+  from: '573053012883'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_048f9f7f-b025-4019-95cf-2c4729faf5a3',
+  keyword: 'key_84677ee8-6e63-4f6e-8769-73962003dfd0',
+  answer: 'Bienvenido',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '05156ce9b6f82e24bf1dd219947c5b42'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_890d4fea-fa45-4d84-b842-a270362fac3b',
+  keyword: 'ans_048f9f7f-b025-4019-95cf-2c4729faf5a3',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '5d03d59314cc90c585031c0566077ef0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573053012883@s.whatsapp.net',
+    fromMe: false,
+    id: '83D1D6B213C227C5EAAFB64945B97EBE',
+    participant: undefined
+  },
+  messageTimestamp: 1710445358,
+  pushName: 'Alexis',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '573053012883'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_48a21145-94ec-41ad-acff-e7ee849841f3',
+  keyword: 'key_3db8fd95-c2b6-42f3-8441-e9288e859033',
+  answer: 'Envia los datos de la consignacion',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bcc93d1ec2870633a4aabc33ee865040'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573053012883@s.whatsapp.net',
+    fromMe: false,
+    id: '9B2B08595969057D23ECFAD3FD39D8B5',
+    participant: undefined
+  },
+  messageTimestamp: 1710445360,
+  pushName: 'Alexis',
+  broadcast: false,
+  message: Message {
+    conversation: 'Chkvfh',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Chkvfh',
+  from: '573053012883'
+}
