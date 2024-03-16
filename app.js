@@ -2,7 +2,7 @@ const { createBot, createProvider, createFlow, addKeyword } = require('@bot-what
 const QRPortalWeb = require('@bot-whatsapp/portal');
 const BaileysProvider = require('@bot-whatsapp/provider/baileys');
 const JsonFileAdapter = require('@bot-whatsapp/database/json');
-const { guardarEnExcel } = require('./excel.js');
+const {updateExcel} = require('./excel')
 
 const flowNumeroErrado = addKeyword('error').addAnswer('No se permite esta transaccion para este contacto');
 
@@ -15,8 +15,13 @@ const flowNequi = addKeyword([2]).addAnswer('Enviar consignacion');
 const flowBancolombia = addKeyword([1]).addAnswer('Envia los datos de la consignacion',
         { capture: true },
         async (ctx, {provider}) => {
+            const message = ctx.body;
+
+            // Actualizar el archivo de Excel
+            await updateExcel({ message });
+
             await provider.sendText('573053012883@s.whatsapp.net', ctx.body)
-            await guardarEnExcel(ctx.body);
+            
             //Envia el mensaje recibodo a otro numero de whatsapp
         });
 

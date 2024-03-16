@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573053012883@s.whatsapp.net',
     fromMe: false,
-    id: '7743C0E53AF085D10F3CC8E7F65B2C7B',
+    id: '483AC448C7DC7FDD1D39902C980C4C46',
     participant: undefined
   },
-  messageTimestamp: 1710445354,
+  messageTimestamp: 1710607752,
   pushName: 'Alexis',
   broadcast: false,
   message: Message {
@@ -19,8 +19,8 @@
   from: '573053012883'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_048f9f7f-b025-4019-95cf-2c4729faf5a3',
-  keyword: 'key_84677ee8-6e63-4f6e-8769-73962003dfd0',
+  ref: 'ans_4b6a0e31-195b-4013-a3c8-f3580a85823d',
+  keyword: 'key_e5701c96-638d-43fe-8be9-0e2f7cad13af',
   answer: 'Bienvenido',
   options: {
     media: null,
@@ -34,11 +34,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '05156ce9b6f82e24bf1dd219947c5b42'
+  refSerialize: '1b895e2e74a70f9d79d08383fd4b2e5f'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_890d4fea-fa45-4d84-b842-a270362fac3b',
-  keyword: 'ans_048f9f7f-b025-4019-95cf-2c4729faf5a3',
+  ref: 'ans_c07bf088-35ab-48e0-a964-0a1e56f19aac',
+  keyword: 'ans_4b6a0e31-195b-4013-a3c8-f3580a85823d',
   answer: '__call_action__',
   options: {
     media: null,
@@ -52,16 +52,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '5d03d59314cc90c585031c0566077ef0'
+  refSerialize: '983d0dde7d3c13d2e709e7b865205db9'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573053012883@s.whatsapp.net',
     fromMe: false,
-    id: '83D1D6B213C227C5EAAFB64945B97EBE',
+    id: 'A9CFF2DE0057D01E49A5DB5651EC22B1',
     participant: undefined
   },
-  messageTimestamp: 1710445358,
+  messageTimestamp: 1710607756,
   pushName: 'Alexis',
   broadcast: false,
   message: Message {
@@ -75,8 +75,8 @@
   from: '573053012883'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_48a21145-94ec-41ad-acff-e7ee849841f3',
-  keyword: 'key_3db8fd95-c2b6-42f3-8441-e9288e859033',
+  ref: 'ans_342144b9-a772-4212-8b87-2061d5964ba7',
+  keyword: 'key_1adc2121-c882-47b3-8b10-7545800ae128',
   answer: 'Envia los datos de la consignacion',
   options: {
     media: null,
@@ -90,25 +90,25 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'bcc93d1ec2870633a4aabc33ee865040'
+  refSerialize: '4577c4aef1efa5386907ae44992f2b4b'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573053012883@s.whatsapp.net',
     fromMe: false,
-    id: '9B2B08595969057D23ECFAD3FD39D8B5',
+    id: '569E2947B1AE73B0CA7A14F9589EA218',
     participant: undefined
   },
-  messageTimestamp: 1710445360,
+  messageTimestamp: 1710607760,
   pushName: 'Alexis',
   broadcast: false,
   message: Message {
-    conversation: 'Chkvfh',
+    conversation: 'Prueba',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Chkvfh',
+  body: 'Prueba',
   from: '573053012883'
 }

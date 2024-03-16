@@ -1,15 +1,15 @@
 [
   {
-    "ref": "566cb608-fae7-494b-a41d-9be2a5dbcd1e",
-    "keyword": "082803bc700fc67aa5748498061cc6af",
+    "ref": "32076543-6e01-4d57-b56e-4e6b2d6f190a",
+    "keyword": "718b347cc1183047a496120c364acaee",
     "answer": "9",
     "options": {},
     "from": "573053012883",
     "refSerialize": "a988c0775e3fda48f513c1a054140b3c"
   },
   {
-    "ref": "ans_048f9f7f-b025-4019-95cf-2c4729faf5a3",
-    "keyword": "key_84677ee8-6e63-4f6e-8769-73962003dfd0",
+    "ref": "ans_4b6a0e31-195b-4013-a3c8-f3580a85823d",
+    "keyword": "key_e5701c96-638d-43fe-8be9-0e2f7cad13af",
     "answer": "Bienvenido",
     "options": {
       "media": null,
@@ -23,12 +23,12 @@
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "05156ce9b6f82e24bf1dd219947c5b42",
+    "refSerialize": "1b895e2e74a70f9d79d08383fd4b2e5f",
     "from": "573053012883"
   },
   {
-    "ref": "ans_890d4fea-fa45-4d84-b842-a270362fac3b",
-    "keyword": "ans_048f9f7f-b025-4019-95cf-2c4729faf5a3",
+    "ref": "ans_c07bf088-35ab-48e0-a964-0a1e56f19aac",
+    "keyword": "ans_4b6a0e31-195b-4013-a3c8-f3580a85823d",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -42,12 +42,12 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "5d03d59314cc90c585031c0566077ef0",
+    "refSerialize": "983d0dde7d3c13d2e709e7b865205db9",
     "from": "573053012883"
   },
   {
-    "ref": "ans_3b7a4c68-9c48-4bd2-b9b4-b8eac9480173",
-    "keyword": "key_1fe91092-5bb6-476d-988b-f1f31eb70d40",
+    "ref": "ans_d94da8eb-2671-48b9-a2e4-d7d830021bdd",
+    "keyword": "key_fd77054b-ca9f-433d-b1f5-f0e9d5fa7367",
     "answer": "Escoge la opcion:\n👉 1️⃣ Para Bancolombia\n👉 2️⃣ Para Nequi, Grupo Aval, Gana o Facturas\n👉 3️⃣ Efecty\n👉 4️⃣ Otros ",
     "options": {
       "media": null,
@@ -59,7 +59,7 @@
       "ref": null,
       "nested": [
         {
-          "ref": "key_3db8fd95-c2b6-42f3-8441-e9288e859033",
+          "ref": "key_1adc2121-c882-47b3-8b10-7545800ae128",
           "keyword": [
             1
           ],
@@ -70,8 +70,8 @@
           "refSerialize": "fab9532a0f6fb6b9733797bf70a88975"
         },
         {
-          "ref": "ans_48a21145-94ec-41ad-acff-e7ee849841f3",
-          "keyword": "key_3db8fd95-c2b6-42f3-8441-e9288e859033",
+          "ref": "ans_342144b9-a772-4212-8b87-2061d5964ba7",
+          "keyword": "key_1adc2121-c882-47b3-8b10-7545800ae128",
           "answer": "Envia los datos de la consignacion",
           "options": {
             "media": null,
@@ -85,10 +85,10 @@
             "keyword": {},
             "callback": true
           },
-          "refSerialize": "bcc93d1ec2870633a4aabc33ee865040"
+          "refSerialize": "4577c4aef1efa5386907ae44992f2b4b"
         },
         {
-          "ref": "key_378e6393-ab05-4e59-8377-5c66c520a321",
+          "ref": "key_2cdff24e-4adb-423c-ade6-db1069c178ad",
           "keyword": [
             2
           ],
@@ -99,8 +99,8 @@
           "refSerialize": "9984db426933f1470c1317888d6510d5"
         },
         {
-          "ref": "ans_c8c10c3a-97b7-43b3-a927-3f26f515a009",
-          "keyword": "key_378e6393-ab05-4e59-8377-5c66c520a321",
+          "ref": "ans_daebb5d9-86b0-4586-a94d-bdaac089444a",
+          "keyword": "key_2cdff24e-4adb-423c-ade6-db1069c178ad",
           "answer": "Enviar consignacion",
           "options": {
             "media": null,
@@ -114,10 +114,10 @@
             "keyword": {},
             "callback": false
           },
-          "refSerialize": "81f6bb0d0cd44a67ae603b33c63010c1"
+          "refSerialize": "b02c7d7ef99aa29b37691d2160dddb19"
         },
         {
-          "ref": "key_db719cb2-4e5e-4235-a3e5-67d10b8b3bca",
+          "ref": "key_0e94d131-1130-4ae9-bb0e-a7a028ba06fb",
           "keyword": [
             3
           ],
@@ -128,8 +128,8 @@
           "refSerialize": "f676d62e6d6c050f0a0368bce13a929d"
         },
         {
-          "ref": "ans_c63ca2ba-785b-464c-baaa-18fc3542ec8e",
-          "keyword": "key_db719cb2-4e5e-4235-a3e5-67d10b8b3bca",
+          "ref": "ans_19713602-4017-41d7-9c19-de103df8d402",
+          "keyword": "key_0e94d131-1130-4ae9-bb0e-a7a028ba06fb",
           "answer": "Enviar consignacion",
           "options": {
             "media": null,
@@ -143,10 +143,10 @@
             "keyword": {},
             "callback": false
           },
-          "refSerialize": "7d687844fb6146c491f10b0d98bc2c93"
+          "refSerialize": "c830e898261d7a08b5365fca032bf616"
         },
         {
-          "ref": "key_09d836ea-2118-4edb-97ad-7c9eed8222e3",
+          "ref": "key_8aaa28ad-3165-4f6c-9dee-bc3201c9790e",
           "keyword": [
             4
           ],
@@ -157,8 +157,8 @@
           "refSerialize": "9d3893ec22d87d4a857cef2b49b0a92d"
         },
         {
-          "ref": "ans_eff4acf3-ae58-4fc8-a9f0-c98e0675bb55",
-          "keyword": "key_09d836ea-2118-4edb-97ad-7c9eed8222e3",
+          "ref": "ans_2e6e11dc-5008-4dbb-9c8e-d057c82f135c",
+          "keyword": "key_8aaa28ad-3165-4f6c-9dee-bc3201c9790e",
           "answer": "Enviar consignacion",
           "options": {
             "media": null,
@@ -172,26 +172,26 @@
             "keyword": {},
             "callback": false
           },
-          "refSerialize": "a56d154577eec7fd1606ff788316408d"
+          "refSerialize": "ff363dc8f37d16613265d3a637a57328"
         }
       ],
       "keyword": {},
       "callback": false
     },
-    "refSerialize": "ed5848b7dc9a1cb94b9742ecf67575cf",
+    "refSerialize": "19c8ae251cb0147cc96667b3bdb30be2",
     "from": "573053012883"
   },
   {
-    "ref": "8fe45c0a-571f-4017-98f9-090440101eeb",
-    "keyword": "ed5848b7dc9a1cb94b9742ecf67575cf",
+    "ref": "99d3b263-b31f-406a-81bf-832a0e15b945",
+    "keyword": "19c8ae251cb0147cc96667b3bdb30be2",
     "answer": "1",
     "options": {},
     "from": "573053012883",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_48a21145-94ec-41ad-acff-e7ee849841f3",
-    "keyword": "key_3db8fd95-c2b6-42f3-8441-e9288e859033",
+    "ref": "ans_342144b9-a772-4212-8b87-2061d5964ba7",
+    "keyword": "key_1adc2121-c882-47b3-8b10-7545800ae128",
     "answer": "Envia los datos de la consignacion",
     "options": {
       "media": null,
@@ -205,15 +205,15 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "bcc93d1ec2870633a4aabc33ee865040",
+    "refSerialize": "4577c4aef1efa5386907ae44992f2b4b",
     "from": "573053012883"
   },
   {
-    "ref": "5f54cfba-42c1-4843-b980-c29ce09772c1",
-    "keyword": "bcc93d1ec2870633a4aabc33ee865040",
-    "answer": "Chkvfh",
+    "ref": "dfe52bbc-ee4b-4408-a1cc-a07ae13e8931",
+    "keyword": "4577c4aef1efa5386907ae44992f2b4b",
+    "answer": "Prueba",
     "options": {},
     "from": "573053012883",
-    "refSerialize": "b068ce4faeee336a02bc3307675afcfb"
+    "refSerialize": "718b347cc1183047a496120c364acaee"
   }
 ]

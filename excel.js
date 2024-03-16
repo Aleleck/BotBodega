@@ -1,25 +1,28 @@
-const { Workbook } = require('exceljs');
+const XlsxPopulate = require('xlsx-populate');
+const filePath = 'C:\\Users\\lenovo\\OneDrive\\SUMA2024.xlsx';
 
-async function guardarEnExcel(mensaje) {
-    const workbook = new Workbook();
-    await workbook.xlsx.readFile('C:/Users/lenovo/OneDrive/SUMA2024.xlsx');
-    const worksheet = workbook.getWorksheet('12 NANY');
-    console.log('lee el excel')
-    // Encontrar la próxima celda vacía en la columna 'D'
-    let nextRow = 1;
-    while (worksheet.getCell(`D${nextRow}`).value) {
-        console.log('busca la celda')
-        nextRow++;
-    }
-    
-    // Escribir el mensaje en la próxima celda vacía en la columna 'D'
-    worksheet.getCell(`D${nextRow}`).value = mensaje;
+async function updateExcel(data) {
+    const workbook = await XlsxPopulate.fromFileAsync(filePath);
 
-    // Guardar el archivo Excel
-    await workbook.xlsx.writeFile('C:/Users/lenovo/OneDrive/SUMA2024.xlsx');
-    console.log('escribe el mensaje')
+    // Actualizar la hoja "3 ROMAN"
+    const romanSheet = workbook.sheet('3 ROMAN');
+    const nextRowB = findNextEmptyCell(romanSheet, 'B');
+    romanSheet.cell(nextRowB.row, nextRowB.col).value(data.message);
+
+    // Actualizar la hoja "6 CECILIA"
+    const ceciliaSheet = workbook.sheet('6 CECILIA');
+    const nextRowD = findNextEmptyCell(ceciliaSheet, 'D');
+    ceciliaSheet.cell(nextRowD.row, nextRowD.col).value(data.message);
+
+    // Guardar los cambios en el archivo de Excel
+    await workbook.toFileAsync(filePath);
 }
 
-module.exports = {
-    guardarEnExcel
-};
+function findNextEmptyCell(sheet, col) {
+    const colLetter = String.fromCharCode(col + 64);
+    const range = `${colLetter}1:${colLetter}${sheet.lastRowAddress.r}`;
+    const cell = sheet.range(range).find(cell => !cell.value());
+    return cell ? { row: cell.row().number, col } : { row: sheet.lastRowAddress.r + 1, col };
+}
+
+module.exports = { updateExcel };
