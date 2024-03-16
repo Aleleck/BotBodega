@@ -17,7 +17,7 @@ async function updateExcel(data) {
     // Guardar los cambios en el archivo de Excel
     await workbook.toFileAsync(filePath);
 }
-
+//lkhkkljhgkl
 function findNextEmptyCell(sheet, col) {
     const colLetter = String.fromCharCode(col + 64);
     const range = `${colLetter}1:${colLetter}${sheet.lastRowAddress.r}`;
