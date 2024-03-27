@@ -1,4 +1,4 @@
-const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot');
+const { createBot, createProvider, createFlow, addKeyword, EVENTS } = require('@bot-whatsapp/bot');
 const QRPortalWeb = require('@bot-whatsapp/portal');
 const BaileysProvider = require('@bot-whatsapp/provider/baileys');
 const JsonFileAdapter = require('@bot-whatsapp/database/json');
@@ -18,7 +18,7 @@ const flowBancolombia = addKeyword([1]).addAnswer('Envia los datos de la consign
             const message = ctx.body;
 
             // Actualizar el archivo de Excel
-            await updateExcel({ message });
+            //await updateExcel({ message });
 
             await provider.sendText('573053012883@s.whatsapp.net', ctx.body)
             
@@ -51,9 +51,23 @@ const flowRoman = addKeyword(['9']).addAnswer('Bienvenido').addAction(async (ctx
         }
     })
 
+const flowPrincipal = addKeyword(EVENTS.WELCOME).addAnswer('Hola bienvenido a mi chatbot').addAction(async(ctx,{ gotoFlow }) => {
+    //Aqui con el ctx.from verificamos nos esten hablando del numero de roman o de jenny
+    const allowedNumbers = ['573216421174', '573147348704', '573053012883'];
+    const fromNumber = ctx.from;
+    const fromNombre = ctx.body;
+
+    if (allowedNumbers.includes(fromNumber)||fromNombre == 'Prueba1') {
+        // Procede con la lógica que desees si el mensaje viene de uno de los números permitidos
+        // Por ejemplo, enviar consignación
+        console.log('Mensaje recibido de un número permitido:', fromNumber);
+        gotoFlow(flowEscoge)
+    }
+})
+
 const main = async () => {
     const adapterDB = new JsonFileAdapter()
-    const adapterFlow = createFlow([flowRoman, flowEscoge])//quito el "flowPrincipal" para crear un menu 
+    const adapterFlow = createFlow([flowPrincipal, flowRoman, flowEscoge])//quito el "flowPrincipal" para crear un menu 
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({
