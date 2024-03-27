@@ -63,3 +63,17 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
         null,
         [flowBonos, flowPrecios, flowPedido, flowDiscord]
     )
+
+    const flowRoman = addKeyword(['9']).addAnswer('Bienvenido').addAction(async (ctx, { gotoFlow }) => {
+
+        //Aqui con el ctx.from verificamos nos esten hablando del numero de roman o de jenny
+        const allowedNumbers = ['573216421174', '573147348704', '573053012883'];
+        const fromNumber = ctx.from;
+
+        if (allowedNumbers.includes(fromNumber)) {
+            // Procede con la lógica que desees si el mensaje viene de uno de los números permitidos
+            // Por ejemplo, enviar consignación
+            console.log('Mensaje recibido de un número permitido:', fromNumber);
+            gotoFlow(flowEscoge)
+        }
+    })
